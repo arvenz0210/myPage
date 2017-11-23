@@ -168,13 +168,8 @@ footer {
 
 
 #tecnologies{
-  color: black!important;
   padding: 0;
-  background-image: url("../img/seec.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background: #3FC1C9
 }
 .pad{
   padding: 40px;
