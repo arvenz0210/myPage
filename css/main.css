@@ -1,4 +1,112 @@
-p{
+*{
+  margin: 0;
+  padding: 0
+}
+body{
+  background-color: #252A34
+}
+
+section{
+  clear: both;
+  padding: 40px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section .bPart{
+  width: 70%;
+  float: right;
+}
+
+section .aPart{
+  width: 30%;
+  display: inline-block;
+  float: left;
+}
+
+section h2{
+  margin: 15px 0;
+  font-family: 'Merriweather', serif;
+}
+
+
+.logo{
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%
+}
+.logo img{
+
+}
+.logo h1{
+  font-family: 'Merriweather', serif;
+  margin-top: 20px;
+  color: white;
   text-align: center;
-  color: red;
+}
+.coverpage{
+  padding: 0!important;
+  background-image: url("../img/port.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+header nav{
+  background: #FC5185;
+  display: flex;
+  justify-content: center;
+}
+header nav > ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+header nav > ul li{
+  padding: 10px 20px;
+    transition: all ease 1s;
+}
+header nav > ul li a{
+
+  text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  color: white;
+}
+header nav > ul li:hover{
+  background: #f42c69;
+  cursor: pointer;
+}
+
+
+.tecList{
+  background: red;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #F5F5F5;
+  list-style: none;
+}
+.tecList ul li button:hover{
+  color: #FC5185;
+}
+.tecList ul{
+  transition:  all ease 1s;
+  color: #FC5185;
+  margin-left: 10px;
+  list-style: none
+}
+.btnTect{
+  border: none;
+  background: none;
+  color: #3FC1C9
 }
