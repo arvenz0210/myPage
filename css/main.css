@@ -26,6 +26,7 @@ section .aPart {
 }
 
 section h2 {
+  text-align: center;
   margin: 15px 0;
   font-family: 'Merriweather', serif;
 }
