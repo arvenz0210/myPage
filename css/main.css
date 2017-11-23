@@ -162,5 +162,38 @@ footer {
   color: white;
   font-size: 10pt;
   text-align: center;
-  margin-bottom: 20px;
+}
+
+
+
+
+#tecnologies{
+  padding: 0;
+  background-image: url("../img/sec.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.pad{
+  padding: 40px;
+}
+
+footer{
+  padding: 0;
+  background-image: url("../img/sec.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+#contact{
+  padding: 0;
+  background-image: url("../img/sec.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
