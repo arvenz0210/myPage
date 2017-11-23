@@ -92,8 +92,6 @@ header nav>ul li:hover {
 }
 
 .tecList {
-  background: red;
-  width: 200px;
   padding: 10px;
   border-radius: 10px;
   background: #F5F5F5;
@@ -111,7 +109,11 @@ header nav>ul li:hover {
   margin-left: 10px;
   list-style: none
 }
-
+.tecIcon{
+  float: left;
+  width: 100px;
+  margin: 10px;
+}
 .btnTect {
   border: none;
   background: none;
