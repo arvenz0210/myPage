@@ -98,6 +98,7 @@ header nav > ul li:hover{
 }
 .tecList ul li button:hover{
   color: #FC5185;
+  cursor: pointer;
 }
 .tecList ul{
   transition:  all ease 1s;
@@ -109,4 +110,41 @@ header nav > ul li:hover{
   border: none;
   background: none;
   color: #3FC1C9
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  background: #3FC1C9;
+  flex-direction: column;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+}
+form input{
+  width: 100%;
+  border: none;
+  height: 20px;
+
+}
+form button{
+  background: #FC5185;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  display: inline-block;
+  transition: all ease 1s;
+}
+
+form button:hover{
+  background: #bf345e;
+  cursor: pointer;
 }
