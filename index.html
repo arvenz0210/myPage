@@ -138,7 +138,8 @@
 </script>
 <script type="text/javascript">
   function showMsg(){
-    alert("MSJ <3")
+    var date = new Date();
+    alert("MSJ  <(°)   " + (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear())
   }
   $( document ).ready(function() {
      showMsg();
