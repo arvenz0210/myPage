@@ -138,8 +138,20 @@
 </script>
 <script type="text/javascript">
   function showMsg(){
-    var date = new Date();
-    alert("MSJ  <(°)   " + (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear())
+    $.ajax({
+      url: "https://api.timezonedb.com/v2/get-time-zone",
+      data:{
+        key: 'LSYO57WOXUVD',
+        format: 'json',
+        by: 'zone',
+        zone: 'America/Argentina/Buenos_Aires'
+      },
+      type: 'GET',
+      dataType: 'json',
+      success: function(response){
+        alert("Mensaje" + response.formatted)
+      }
+    })
   }
   $( document ).ready(function() {
      showMsg();
