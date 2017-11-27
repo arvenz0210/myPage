@@ -106,16 +106,16 @@
   <section id="contact">
     <h2>Contact</h2>
     <div class="form-container">
-      <form action="">
-      <br>
-      <input type="text" name="name" placeholder="Name" value="">
-      <br>
-      <input type="email" name="Email" placeholder="E-mail" value="">
-      <br>
-      <textarea name="msg" rows="8" cols="80"></textarea>
-      <br>
-      <button type="button" onclick="alert('Tu mensaje se ha enviado');" name="button">send</button>
-    </form>
+      <form action="" id="f">
+        <br>
+          <input type="text" name="name" placeholder="Name" value="">
+        <br>
+          <input type="email" name="Email" placeholder="E-mail" value="">
+        <br>
+          <textarea name="msg" rows="8" cols="80"></textarea>
+        <br>
+          <button type="submit" name="button">send</button>
+      </form>
     </div>
   </section>
 
@@ -149,12 +149,24 @@
       type: 'GET',
       dataType: 'json',
       success: function(response){
-        alert("Mensaje" + response.formatted)
+        console.log("Mensaje" + response.formatted)
       }
+    })
+  }
+  cost user = {};
+  function parse(arr){
+    arr.forEach(function(element){
+      user[element.name] = element.value;
     })
   }
   $( document ).ready(function() {
      showMsg();
+    $('#f').submit(function(event){
+      event.preventDefault();
+      console.log($(this).serializeArray())
+      parse($(this).serializeArray())
+      console.log(user);
+    })
   });
 </script>
 </body>
